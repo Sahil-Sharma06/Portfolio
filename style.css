@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-text-color : #1a2f45;
+    --background-color : #020227;
+    --background-color-about : #15153a;
+    --background-color-work :  #e7ecef;
+    padding: var(--padding-inline-section);
+    --hover-text-color : rgb(183, 0, 255);
+    --bg-color : #f5ebe0;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+/* Utility Classes */
+
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    padding: var(--padding-inline-section);
+}
+
+.hoverLinks{
+    color: var(--bg-color);
+ }
+
+ .sayHi{
+     color: var(--bg-color);
+ }
+
+ .flex{
+    display: flex;
+    align-items: center;
+}
+
+/* Home Section  */
+
+.homeSection{
+    margin-top: 0;
+    background-color: var(--background-color);
+    height: 100vh;
+}
+
+
+/* Navbar Section */
+
+
+.mainNav{
+    /* margin-top: 20px; */
+    justify-content: space-between;
+    font-size: 1.2rem;
+    padding: 30px;
+}
+
+.navLinks ul{
+    gap: 40px;
+}
+
+.hoverLinks:hover{
+    color: rgb(183, 0, 255);
+    transition: 0.3s ease-out;
+}
+
+.sayHi{
+    width: 90px;
+    color: var(--bg-color);
+    border: 1px solid var(--bg-color);
+    padding: 5px;
+    border-radius: 6px;
+}
+
+.sayHii{
+    justify-content: center;
+    align-items: center;
+}
+
+.sayHi:hover{
+     background-color: #b700ff;
+     color: white;
+     transition: 0.2s ease-in;
+}
+
+.linkedIn{
+    color: var(--bg-color);
+}
+
+.linkedIn:hover{
+    color: rgb(54, 1, 177);
+    transition: 0.2s ease-in;
+}
+
+.instagram{
+    color: var(--primary-text-color);
+}
+
+.instagram:hover{
+    color: rgb(255, 76, 243);
+    transition: 0.2s ease-out;
+}
+
+.twitter{
+    color: var(--primary-text-color);
+}
+
+.twitter:hover{
+    color: rgb(71, 144, 233);
+    transition: 0.2s ease-out;
+}
+
+
+/* Header Section  */
+
+.headerSection{
+    padding: 60px;
+    margin-top: 45px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--bg-color);
+}
+
+.headerSection p{
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-family: 'Poppins',sans-serif;
+    color: var(--bg-color);
+}
+
+.iconBox .navLinks{
+    flex-direction: column;
+}
+
+.leftBox{
+    width: 45vw;
+}
+
+.rightBox{
+   width: 40vw;
+   padding-left: 140px;
+  
+}
+
+.ProfilePicture{
+    border-radius: 50%;
+}
+
+.ProfilePicture:hover{
+    box-shadow: 0 0 20px #888;
+    transition: 0.2s ease-in-out;
+}
+
+.myName{
+    color: var(--bg-color);
+}
+
+
+.myName:hover{
+    color: var(--hover-text-color);
+    font-size: 3.2rem;
+    transition: 0.3s ease-out;
+    animation:backwards;
+    animation-duration: 0.2s;
+}
+
+.HireButtons{
+    gap: 30px;
+}
+
+.buttons{
+    margin-left: 370px;
+    margin-top: -35px;
+    gap: 40px;
+   
+}
+
+.buttons a{
+    border: 1px solid var(--primary-text-color);
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 6px;
+    color: beige;
+}
+
+.buttons a:hover{
+    background-color: var(--hover-text-color);
+    color: var(--bg-color);
+    transition: 0.2s ease-in-out;
+    /* box-shadow: 0 0 20px #888; */
+    /* font-size: 1.1rem; */
+}
+
+
+
+/* About Me Section  */
+
+.aboutSection{
+    /* margin-top: 100px; */
+    background-color: var(--background-color-about);
+    background-size: cover;
+    color: white;
+}
+
+
+.aboutMeDescription{
+    padding: 20px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutSection:hover{
+    background-color: var(--hover-text-color);
+    color: var(--bg-color);
+    transition: 0.2s ease-in;
+}
+
+
+/* Work section  */
+
+.workSectionMain{
+    background-color: var(--background-color-work);
+    height: 130px;
+}
+
+.workImage img{
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-left: 100px;
+}
+
+.workImage img{
+   width: 110px;
+   height: 110px;
+   gap: 30px;
+}
+
+/* Services Section  */
+
+.servicesSectionMain{
+    background-color: var(--background-color);
+    color: var(--bg-color);
+    height: 400px;
+}
+
+.servicesSection{
+    padding: 80px 10px 0;
+    justify-content: space-between;
+}
+
+.servicesCard{
+    flex-direction: column;
+    gap: 20px;
+    max-width: 30%;
+    text-align: center;
+}
+
+.webDevImg{
+    height: 140px;
+    width: 270px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+
+.UiUx{
+    height: 140px;
+    width: 270px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+
+.AppDevelopement{
+    height: 140px;
+    width: 270px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+
+.servicesCard .secondaryButton{
+    border: 0.5px solid var(--bg-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: var(--bg-color) !important;
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+}
+
+.secondaryButton:hover{
+    background-color: var(--hover-text-color);
+    color: var(--bg-color);
+    transition: 0.2s ease-out;
+}
+
+.servicesHeading{
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hire Section  */
+
+.hireSectionMain{
+   margin-top: 10px;
+   background-color: var(--background-color);
+   padding: 50px;
+   background-color: var(--background-color-about);
+   color: var(--bg-color);
+}
+
+
+.secondaryButton{
+    border: 0.5px solid var(--bg-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: var(--bg-color) !important;
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+}
+
+.hireSectionMain .secondaryButton{
+    margin-left: 85px;
+}
+
+.formSection{
+    justify-content: center;
+    align-items: center;
+}
+
+.formSection input{
+    width: 300px;
+}
+
+.hireSectionMain:hover{
+    background-color: var(--background-color);
+    transition: 0.2s ease-in-out;
+}
+
+.formSection{
+    margin-top: 20px;
+    padding: 30px;
+}
+
+.formSection .hire{
+    /* margin-top: 20px; */
+    padding: 10px;
+    font-size: 20px;
+}
+
+.formSection .hire input{
+    justify-content: center;
+    font-size: 18px;
+    border-radius: 5px;
+
+}
+
+/* Footer Section  */
+
+.subFooter{
+    height: 60px;
+    background-color: #b9cde4;
+    justify-content: center;
+    align-items: center;
+    padding: var(--padding-inline-section);
+}
+
+.subFooter a{
+    color: var(--primary-text-color);
+}
+
+.subFooter .subFooterSection a{
+   margin-top: 20px;
+}
+
+.subFooterSection{
+   
+    justify-content: center;
+    gap: 30px;
+}
+
+.subFooterSection a:hover{
+    color: var(--accent_color);
+    transition: 0.3s ease-out;
+}
+
+/* footer .subFooter:hover{
+    color: var(--background-color-work);
+    background-color: var(--primary-text-color);
+} */
